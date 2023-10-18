@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registraion</title>
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url('ba.jpg');
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg'); /* Add the URL of your image here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1129c4;
+}
+.container{
+	max-width: 650px;
+	padding: 28px;
+	margin: 0 28px;
+	box-shadow: 0 1px 2px #e3e3e1;
+}
+h2{
+	font-weight: bold;
+	font-size: 25px;
+	text-align: left;
+	color: #DAF7A6;
+	padding-bottom: 10px;
+	border-bottom: solid 1px silver;
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.input-box{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	padding-bottom: 15px;
+}
+
+.input-box label, gender{
+	width: 100%;
+	color: #030111;
+	font-weight: bold;
+	margin: 5px 0;
+}
+.gender{
+	font-size: 16px;
+}
+.input-box input{
+	height:40px;
+	width: 95%;
+	padding: 10px 0px 10px 20px;
+	font-size: 15px;
+	border-radius: 5px;
+	outline: none;
+	border: solid 1px #ccc;
+}
+
+.gender-option label{
+	padding: 0 20px 0 5px;
+	cursor: pointer;
+}
+.button{
+	margin: 15px 0;
+
+}
+.button button{
+	width: 100%;
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	color:#02010e ;
+	background: #fff;
+	margin-left:1px;
+}
+.button button:hover{
+	cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<form action="register.php" method="post">
+<div class="container">
+	<form class="form">
+		<h2>Registration</h2>
+		<div class="content">
+			<div class="input-box">
+				<label>Full Name</label>
+				<input type="text" placeholder="Enter full name" required name="name1">
+			</div>
+
+			<div class="input-box">
+				<label>Email</label>
+				<input type="Email" placeholder="abc@gmail.com" required  name="email">
+			</div>
+
+			<div class="input-box">
+				<label>Phone number</label>
+				<input type="tel" placeholder="1234XXXX34" required name="phone">
+			</div>
+
+			<div class="input-box">
+				<label>Aadhar number</label>
+				<input type="number" placeholder="Enter full name" required name="adhar">
+			</div>
+
+			<div class="input-box">
+				<label>Password</label>
+				<input type="password" placeholder="Set a strong password" required name="pass1">
+			</div>
+
+			<div class="input-box">
+				<label>Confirm Password</label>
+				<input type="password" placeholder="confirm the password" required name="pass2">
+			</div>
+		</div>
+		<div class="button">
+			<button type="submit">Register</button>
+		</div>
+	</form>
+</div>
+</body>
+</html>
